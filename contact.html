@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Baseline</title>
+  <meta name="description" content="Have a question or ready to get started? We'd love to hear from you." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Base<span>line</span></a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="index.html"   class="nav__link" data-page="index.html">Home</a></li>
+            <li><a href="about.html"   class="nav__link" data-page="about.html">About</a></li>
+            <li><a href="contact.html" class="nav__link" data-page="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="contact.html" class="btn btn--primary nav__cta">Get in touch</a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav__mobile">
+        <ul>
+          <li><a href="index.html"   class="nav__link" data-page="index.html">Home</a></li>
+          <li><a href="about.html"   class="nav__link" data-page="about.html">About</a></li>
+          <li><a href="contact.html" class="nav__link" data-page="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title">Let's talk.</h1>
+      <p class="page-hero__subtitle">
+        Have a question, a partnership idea, or just want to say hello? We reply within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info -->
+        <div>
+          <h2 class="contact-info__title">How can we help?</h2>
+          <p class="contact-info__text">
+            Whether you're evaluating Baseline for your team, need support, or want to explore
+            a partnership — we're happy to chat.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail__icon">✉️</div>
+              <div>
+                <div class="contact-detail__label">Email</div>
+                <div class="contact-detail__value">hello@baseline.io</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">📍</div>
+              <div>
+                <div class="contact-detail__label">Office</div>
+                <div class="contact-detail__value">340 Pine St, San Francisco, CA</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">🕐</div>
+              <div>
+                <div class="contact-detail__label">Response time</div>
+                <div class="contact-detail__value">Within 1 business day</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <form class="form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Sarah" required />
+                <span class="error-msg">Please enter your first name.</span>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Kim" required />
+                <span class="error-msg">Please enter your last name.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" placeholder="sarah@company.com" required />
+              <span class="error-msg">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a topic…</option>
+                <option value="demo">Request a demo</option>
+                <option value="pricing">Pricing question</option>
+                <option value="support">Technical support</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Something else</option>
+              </select>
+              <span class="error-msg">Please select a subject.</span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us a bit about what you're looking for…" required></textarea>
+              <span class="error-msg">Please enter your message.</span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="align-self:flex-start;">
+              Send message →
+            </button>
+          </form>
+
+          <div class="form__success" id="form-success">
+            <div class="form__success-icon">✅</div>
+            <div class="form__success-title">Message sent!</div>
+            <p class="form__success-text">Thanks for reaching out. We'll get back to you within one business day.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">Base<span>line</span></div>
+          <p class="footer__tagline">Build what actually matters, with the team you have.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Twitter / X">𝕏</a>
+            <a href="#" class="footer__social" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer__social" aria-label="GitHub">GH</a>
+            <a href="#" class="footer__social" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Product</div>
+          <ul class="footer__col-links">
+            <li><a href="#" class="footer__col-link">Features</a></li>
+            <li><a href="#" class="footer__col-link">Pricing</a></li>
+            <li><a href="#" class="footer__col-link">Changelog</a></li>
+            <li><a href="#" class="footer__col-link">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Company</div>
+          <ul class="footer__col-links">
+            <li><a href="about.html"   class="footer__col-link">About</a></li>
+            <li><a href="#"            class="footer__col-link">Blog</a></li>
+            <li><a href="#"            class="footer__col-link">Careers</a></li>
+            <li><a href="contact.html" class="footer__col-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Legal</div>
+          <ul class="footer__col-links">
+            <li><a href="#" class="footer__col-link">Privacy</a></li>
+            <li><a href="#" class="footer__col-link">Terms</a></li>
+            <li><a href="#" class="footer__col-link">Security</a></li>
+            <li><a href="#" class="footer__col-link">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 Baseline. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
